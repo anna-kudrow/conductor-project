@@ -34,6 +34,13 @@ body {
     padding: 0 57px 0 59px;
   }
 }
+
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 122px 0 129px;
+  }
+}
+
 .main-header {
   background-color: $accent;
   &__inner {
@@ -64,9 +71,33 @@ body {
   }
 }
 
+@media (min-width: 1920px) {
+  .main-header__inner {
+    min-height: 76px;
+  }
+}
+
 .main-header__menu {
   display: flex;
   gap: 13px;
+}
+
+.menu__call-icon::before {
+  display: block;
+  content: url(/images/call.svg);
+  width: 14px;
+  height: 14px;
+}
+
+@media (min-width: 834px) {
+  .menu__call-icon::before {
+    display: none;
+  }
+  .menu__call-icon::after {
+    display: inline-block;
+    content: "8 800 600 83 17";
+    color: #fff;
+  }
 }
 
 .menu__btn {
@@ -95,11 +126,20 @@ body {
     width: 19px;
     height: 19px;
   }
+  .menu__call {
+  }
 }
 
 @media (min-width: 1240px) {
   .menu__sign-in {
     width: 28px;
     height: 28px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .menu__sign-in {
+    width: 36px;
+    height: 36px;
   }
 }
