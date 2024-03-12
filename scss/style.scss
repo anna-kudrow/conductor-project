@@ -1,9 +1,6 @@
 @import "vars";
 @import "fonts";
-@font-face {
-  font-family: "Montserrat";
-  src: url(/fonts/Montserrat-VariableFont_wght.ttf);
-}
+
 * {
   margin: 0;
 }
@@ -22,7 +19,9 @@ body {
   overflow-x: hidden;
   background-color: $main;
   color: #fff;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Normal", "Arial", "sans-serif";
+  font-size: 15px;
+  line-height: 116.9%;
 }
 
 .container {
@@ -162,46 +161,11 @@ body {
   }
 }
 
-.intro__pic {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  filter: brightness(1.3);
-  opacity: 0.6;
-}
-
 .intro__title {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 88.9%;
+  font-family: "Montserrat-ExtraBold";
   letter-spacing: 0.36px;
-}
-
-@media (min-width: 834px) {
-  .intro__title {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 88.9%; /* 42.672px */
-    letter-spacing: 0.72px;
-  }
-  .intro__text {
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 109.9%; /* 43.96px */
-    letter-spacing: -0.8px;
-  }
-
-  .intro__small-text {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 275;
-    line-height: 109.9%; /* 30.772px */
-    letter-spacing: -0.56px;
-  }
+  line-height: 88.9%;
+  font-size: 24px;
 }
 
 .intro__text {
@@ -220,6 +184,61 @@ body {
   line-height: 109.9%;
   letter-spacing: -0.32px;
   margin-top: 56px;
+}
+
+@media (min-width: 834px) {
+  .intro__title {
+    font-family: "Montserrat-ExtraBold";
+    line-height: 88.9%;
+    font-size: 48px;
+    letter-spacing: 0.72px;
+  }
+  .intro__text {
+    font-family: "Montserrat-Medium";
+    font-size: 40px;
+    line-height: 109.9%; /* 43.96px */
+    letter-spacing: -0.8px;
+  }
+
+  .intro__small-text {
+    font-family: "Montserrat-Light";
+    font-size: 28px;
+    font-weight: 275;
+    line-height: 109.9%; /* 30.772px */
+    letter-spacing: -0.56px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .intro__title {
+    font-family: "Montserrat-ExtraBold";
+    font-size: 62px;
+    letter-spacing: 0.93px;
+  }
+
+  .intro__small-text {
+    font-family: "Montserrat-Light";
+    font-size: 32px;
+    letter-spacing: -0.564px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro__title {
+    font-size: 80px;
+    letter-spacing: 1.2px;
+  }
+
+  .intro__text {
+    font-size: 50px;
+    line-height: 109.9%; /* 43.96px */
+    letter-spacing: -1px;
+  }
+
+  .intro__small-text {
+    font-size: 35px;
+    letter-spacing: -0.7px;
+  }
 }
 
 .intro__connect-panel {
@@ -260,6 +279,35 @@ body {
 .telegramm-icon {
   width: 18px;
 }
+
+@media (min-width: 834px) {
+  .phone-icon {
+    width: 20px;
+  }
+
+  .whatsapp-icon {
+    width: 25px;
+  }
+
+  .telegramm-icon {
+    width: 24px;
+  }
+}
+
+.intro__pic img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(1.4);
+  opacity: 0.6;
+}
+
+// @media (min-width: 834px) {
+//   .intro__pic {
+
+//   }
+// }
 
 // .back-link__wrapper {
 //   display: flex;
