@@ -151,13 +151,26 @@ body {
   max-height: 535px;
   padding-top: 81px;
   padding-bottom: 15px;
-  position: relative;
+  background-image: url(/images/abs-picture.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 @media (min-width: 834px) {
   .intro {
     max-height: 1142px;
     padding-top: 199px;
+    padding-bottom: 0px;
+    background-image: url(/images/introbg-834.svg);
+  }
+}
+
+@media (min-width: 1240px) {
+  .intro {
+    max-height: 986px;
+    padding-top: 128px;
+    padding-bottom: 10px;
+    background-image: url(/images/introbg-1240.svg);
   }
 }
 
@@ -250,8 +263,37 @@ body {
   //   position: relative;
 }
 
-.intro__tablet-pic {
+.intro__pics {
   display: none;
+}
+
+@media (min-width: 834px) {
+  .intro__pics {
+    display: flex;
+    gap: 55px 53px;
+  }
+  .intro__tablet-pic {
+    display: block;
+  }
+  .intro-1240-pic {
+    display: none;
+  }
+}
+
+@media (min-width: 1240px) {
+  .intro__pics {
+    display: flex;
+    gap: 68px 66px 68px;
+    width: 192px;
+  }
+
+  .intro__pic {
+    width: 192px;
+    height: 223px;
+  }
+  .intro-1240-pic {
+    display: block;
+  }
 }
 
 @media (min-width: 834px) {
@@ -259,11 +301,14 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 344px;
     justify-content: space-between;
   }
-  .intro__tablet-pic {
-    display: block;
+}
+
+@media (min-width: 1240px) {
+  .intro__connect-panel {
+    margin-top: 223px;
   }
 }
 
@@ -282,6 +327,13 @@ body {
   flex-direction: column;
   padding: 12px 9px 10px 10px;
   gap: 10px;
+}
+
+@media (min-width: 834px) {
+  .connect-panel__social {
+    padding: 16px 12px 14px 13px;
+    gap: 14px;
+  }
 }
 
 .phone-icon {
@@ -310,11 +362,11 @@ body {
   }
 }
 
-.intro__pic img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  filter: brightness(1.4);
-  opacity: 0.6;
-}
+// .intro__pic img {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1;
+//   filter: brightness(1.4);
+//   opacity: 0.6;
+// }
