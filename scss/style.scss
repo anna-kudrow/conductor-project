@@ -245,10 +245,26 @@ body {
   display: flex;
   flex-direction: column;
   align-content: flex-end;
-  //   justify-content: center;
-  //   align-items: center;
   flex-wrap: wrap;
   margin-top: 100px;
+  //   position: relative;
+}
+
+.intro__tablet-pic {
+  display: none;
+}
+
+@media (min-width: 834px) {
+  .intro__connect-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+  .intro__tablet-pic {
+    display: block;
+  }
 }
 
 .connect-panel__wrapper {
@@ -302,17 +318,3 @@ body {
   filter: brightness(1.4);
   opacity: 0.6;
 }
-
-// @media (min-width: 834px) {
-//   .intro__pic {
-
-//   }
-// }
-
-// .back-link__wrapper {
-//   display: flex;
-// }
-
-// .back-link-icon {
-//   justify-content: end;
-// }
