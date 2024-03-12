@@ -54,6 +54,10 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  &__menu {
+    display: flex;
+    gap: 13px;
+  }
 }
 
 @media (min-width: 834px) {
@@ -80,11 +84,6 @@ body {
   .main-header__inner {
     min-height: 76px;
   }
-}
-
-.main-header__menu {
-  display: flex;
-  gap: 13px;
 }
 
 .menu__call-icon::before {
@@ -162,6 +161,28 @@ body {
     padding-top: 199px;
     padding-bottom: 0px;
     background-image: url(/images/introbg-834.svg);
+    &__title {
+      font-family: "Montserrat-ExtraBold";
+      letter-spacing: 0.36px;
+      line-height: 88.9%;
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 109.9%;
+      letter-spacing: -0.4px;
+      margin-top: 10px;
+    }
+    &__small-text {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 275;
+      line-height: 109.9%;
+      letter-spacing: -0.32px;
+      margin-top: 56px;
+    }
   }
 }
 
@@ -174,83 +195,61 @@ body {
   }
 }
 
-.intro__title {
-  font-family: "Montserrat-ExtraBold";
-  letter-spacing: 0.36px;
-  line-height: 88.9%;
-  font-size: 24px;
-}
-
-.intro__text {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 109.9%;
-  letter-spacing: -0.4px;
-  margin-top: 10px;
-}
-
-.intro__small-text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 275;
-  line-height: 109.9%;
-  letter-spacing: -0.32px;
-  margin-top: 56px;
-}
-
 @media (min-width: 834px) {
-  .intro__title {
-    font-family: "Montserrat-ExtraBold";
-    line-height: 88.9%;
-    font-size: 48px;
-    letter-spacing: 0.72px;
-  }
-  .intro__text {
-    font-family: "Montserrat-Medium";
-    font-size: 40px;
-    line-height: 109.9%; /* 43.96px */
-    letter-spacing: -0.8px;
-  }
+  .intro {
+    &__title {
+      font-family: "Montserrat-ExtraBold";
+      line-height: 88.9%;
+      font-size: 48px;
+      letter-spacing: 0.72px;
+    }
+    &__text {
+      font-family: "Montserrat-Medium";
+      font-size: 40px;
+      line-height: 109.9%; /* 43.96px */
+      letter-spacing: -0.8px;
+    }
 
-  .intro__small-text {
-    font-family: "Montserrat-Light";
-    font-size: 28px;
-    font-weight: 275;
-    line-height: 109.9%; /* 30.772px */
-    letter-spacing: -0.56px;
+    &__small-text {
+      font-family: "Montserrat-Light";
+      font-size: 28px;
+      font-weight: 275;
+      line-height: 109.9%; /* 30.772px */
+      letter-spacing: -0.56px;
+    }
   }
 }
 
 @media (min-width: 1240px) {
-  .intro__title {
-    font-family: "Montserrat-ExtraBold";
-    font-size: 62px;
-    letter-spacing: 0.93px;
-  }
-
-  .intro__small-text {
-    font-family: "Montserrat-Light";
-    font-size: 32px;
-    letter-spacing: -0.564px;
+  .intro {
+    &__title {
+      font-family: "Montserrat-ExtraBold";
+      font-size: 62px;
+      letter-spacing: 0.93px;
+    }
+    &__small-text {
+      font-family: "Montserrat-Light";
+      font-size: 32px;
+      letter-spacing: -0.564px;
+    }
   }
 }
 
 @media (min-width: 1920px) {
-  .intro__title {
-    font-size: 80px;
-    letter-spacing: 1.2px;
-  }
-
-  .intro__text {
-    font-size: 50px;
-    line-height: 109.9%; /* 43.96px */
-    letter-spacing: -1px;
-  }
-
-  .intro__small-text {
-    font-size: 35px;
-    letter-spacing: -0.7px;
+  .intro {
+    &__titlle {
+      font-size: 80px;
+      letter-spacing: 1.2px;
+    }
+    &__text {
+      font-size: 50px;
+      line-height: 109.9%; /* 43.96px */
+      letter-spacing: -1px;
+    }
+    &__small-text {
+      font-size: 35px;
+      letter-spacing: -0.7px;
+    }
   }
 }
 
@@ -268,31 +267,35 @@ body {
 }
 
 @media (min-width: 834px) {
-  .intro__pics {
-    display: flex;
-    gap: 55px 53px;
-  }
-  .intro__tablet-pic {
-    display: block;
-  }
-  .intro-1240-pic {
-    display: none;
+  .intro {
+    &__pics {
+      display: flex;
+      gap: 55px 53px;
+    }
+    &__tablet-pic {
+      display: block;
+    }
+    &-1240-pic {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 1240px) {
-  .intro__pics {
-    display: flex;
-    gap: 68px 66px 68px;
-    width: 192px;
-  }
+  .intro {
+    &__pics {
+      display: flex;
+      gap: 68px 66px 68px;
+      width: 192px;
+    }
 
-  .intro__pic {
-    width: 192px;
-    height: 223px;
-  }
-  .intro-1240-pic {
-    display: block;
+    &__pic {
+      width: 192px;
+      height: 223px;
+    }
+    &-1240-pic {
+      display: block;
+    }
   }
 }
 
@@ -361,12 +364,3 @@ body {
     width: 24px;
   }
 }
-
-// .intro__pic img {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   z-index: -1;
-//   filter: brightness(1.4);
-//   opacity: 0.6;
-// }
