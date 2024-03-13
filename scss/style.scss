@@ -30,19 +30,19 @@ body {
 
 @media (min-width: 834px) {
   .container {
-    padding: 0 57px 0 52px;
+    padding: 0 55px 0 52px;
   }
 }
 
 @media (min-width: 1240px) {
   .container {
-    padding: 0 57px 0 59px;
+    padding: 0 64px 0 59px;
   }
 }
 
 @media (min-width: 1920px) {
   .container {
-    padding: 0 122px 0 129px;
+    padding: 0 122px 0 0px;
   }
 }
 
@@ -83,6 +83,7 @@ body {
 @media (min-width: 1920px) {
   .main-header__inner {
     min-height: 76px;
+    margin-left: 124px;
   }
 }
 
@@ -153,6 +154,28 @@ body {
   background-image: url(/images/abs-picture.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
+  &__title {
+    font-family: "Montserrat-ExtraBold";
+    letter-spacing: 0.36px;
+    line-height: 88.9%;
+    font-size: 24px;
+  }
+  &__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109.9%;
+    letter-spacing: -0.4px;
+    margin-top: 10px;
+  }
+  &__small-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: 109.9%;
+    letter-spacing: -0.32px;
+    margin-top: 56px;
+  }
 }
 
 @media (min-width: 834px) {
@@ -161,42 +184,6 @@ body {
     padding-top: 199px;
     padding-bottom: 0px;
     background-image: url(/images/introbg-834.svg);
-    &__title {
-      font-family: "Montserrat-ExtraBold";
-      letter-spacing: 0.36px;
-      line-height: 88.9%;
-      font-size: 24px;
-    }
-    &__text {
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 109.9%;
-      letter-spacing: -0.4px;
-      margin-top: 10px;
-    }
-    &__small-text {
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 275;
-      line-height: 109.9%;
-      letter-spacing: -0.32px;
-      margin-top: 56px;
-    }
-  }
-}
-
-@media (min-width: 1240px) {
-  .intro {
-    max-height: 986px;
-    padding-top: 128px;
-    padding-bottom: 10px;
-    background-image: url(/images/introbg-1240.svg);
-  }
-}
-
-@media (min-width: 834px) {
-  .intro {
     &__title {
       font-family: "Montserrat-ExtraBold";
       line-height: 88.9%;
@@ -222,6 +209,10 @@ body {
 
 @media (min-width: 1240px) {
   .intro {
+    max-height: 986px;
+    padding-top: 128px;
+    // padding-bottom: 10px;
+    background-image: url(/images/introbg-1240.svg);
     &__title {
       font-family: "Montserrat-ExtraBold";
       font-size: 62px;
@@ -237,6 +228,13 @@ body {
 
 @media (min-width: 1920px) {
   .intro {
+    max-height: 984px;
+    padding-top: 182px;
+    // padding-bottom: 10px;
+    background-image: url(/images/introbg1920.svg);
+    &__info {
+      margin-left: 127px;
+    }
     &__titlle {
       font-size: 80px;
       letter-spacing: 1.2px;
@@ -253,13 +251,34 @@ body {
   }
 }
 
-.intro__connect-panel {
+.intro__connect {
   display: flex;
   flex-direction: column;
   align-content: flex-end;
   flex-wrap: wrap;
   margin-top: 100px;
-  //   position: relative;
+}
+@media (min-width: 834px) {
+  .intro__connect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 344px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1240px) {
+  .intro__connect {
+    margin-top: 223px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .intro__connect {
+    margin-top: 50px;
+    margin-left: 49px;
+  }
 }
 
 .intro__pics {
@@ -278,15 +297,18 @@ body {
     &-1240-pic {
       display: none;
     }
+    &-1920-pic {
+      display: none;
+    }
   }
 }
 
 @media (min-width: 1240px) {
   .intro {
     &__pics {
-      display: flex;
       gap: 68px 66px 68px;
       width: 192px;
+      margin-bottom: 28px;
     }
 
     &__pic {
@@ -299,19 +321,21 @@ body {
   }
 }
 
-@media (min-width: 834px) {
-  .intro__connect-panel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 344px;
-    justify-content: space-between;
-  }
-}
+@media (min-width: 1920px) {
+  .intro {
+    &__pics {
+      gap: 89px;
+      margin-bottom: 22px;
+      //   width: 192px;
+    }
 
-@media (min-width: 1240px) {
-  .intro__connect-panel {
-    margin-top: 223px;
+    &__pic {
+      width: 258px;
+      height: 298px;
+    }
+    &-1920-pic {
+      display: block;
+    }
   }
 }
 
@@ -322,7 +346,31 @@ body {
   max-height: 135px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
-  //   padding-top: 12px;
+  justify-content: space-between;
+}
+
+@media (min-width: 834px) {
+  .connect-panel__wrapper {
+    max-width: 51px;
+    max-height: 177px;
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .connect-panel__wrapper {
+    max-width: 51px;
+    max-height: 180px;
+    margin-bottom: 41px;
+    align-self: end;
+  }
+}
+@media (min-width: 1920px) {
+  .connect-panel__wrapper {
+    max-width: 82px;
+    max-height: 284px;
+    // margin-bottom: 41px;
+  }
 }
 
 .connect-panel__social {
@@ -330,11 +378,18 @@ body {
   flex-direction: column;
   padding: 12px 9px 10px 10px;
   gap: 10px;
+  align-items: center;
 }
 
 @media (min-width: 834px) {
   .connect-panel__social {
     padding: 16px 12px 14px 13px;
+    gap: 14px;
+  }
+}
+@media (min-width: 1920px) {
+  .connect-panel__social {
+    padding: 26px 19px 22px 22px;
     gap: 14px;
   }
 }
@@ -351,6 +406,11 @@ body {
   width: 18px;
 }
 
+.back-link-icon {
+  width: 39px;
+  height: 39px;
+}
+
 @media (min-width: 834px) {
   .phone-icon {
     width: 20px;
@@ -362,5 +422,27 @@ body {
 
   .telegramm-icon {
     width: 24px;
+  }
+  .back-link-icon {
+    width: 51px;
+    height: 51px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .phone-icon {
+    width: 33px;
+  }
+
+  .whatsapp-icon {
+    width: 41px;
+  }
+
+  .telegramm-icon {
+    width: 39px;
+  }
+  .back-link-icon {
+    width: 82px;
+    height: 82px;
   }
 }

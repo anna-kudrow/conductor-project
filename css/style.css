@@ -58,17 +58,17 @@ body {
 
 @media (min-width: 834px) {
   .container {
-    padding: 0 57px 0 52px;
+    padding: 0 55px 0 52px;
   }
 }
 @media (min-width: 1240px) {
   .container {
-    padding: 0 57px 0 59px;
+    padding: 0 64px 0 59px;
   }
 }
 @media (min-width: 1920px) {
   .container {
-    padding: 0 122px 0 129px;
+    padding: 0 122px 0 0px;
   }
 }
 .main-header {
@@ -106,6 +106,7 @@ body {
 @media (min-width: 1920px) {
   .main-header__inner {
     min-height: 76px;
+    margin-left: 124px;
   }
 }
 .menu__call-icon::before {
@@ -173,6 +174,28 @@ body {
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+.intro__title {
+  font-family: "Montserrat-ExtraBold";
+  letter-spacing: 0.36px;
+  line-height: 88.9%;
+  font-size: 24px;
+}
+.intro__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109.9%;
+  letter-spacing: -0.4px;
+  margin-top: 10px;
+}
+.intro__small-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: 109.9%;
+  letter-spacing: -0.32px;
+  margin-top: 56px;
+}
 
 @media (min-width: 834px) {
   .intro {
@@ -181,38 +204,6 @@ body {
     padding-bottom: 0px;
     background-image: url(/images/introbg-834.svg);
   }
-  .intro__title {
-    font-family: "Montserrat-ExtraBold";
-    letter-spacing: 0.36px;
-    line-height: 88.9%;
-    font-size: 24px;
-  }
-  .intro__text {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 109.9%;
-    letter-spacing: -0.4px;
-    margin-top: 10px;
-  }
-  .intro__small-text {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 275;
-    line-height: 109.9%;
-    letter-spacing: -0.32px;
-    margin-top: 56px;
-  }
-}
-@media (min-width: 1240px) {
-  .intro {
-    max-height: 986px;
-    padding-top: 128px;
-    padding-bottom: 10px;
-    background-image: url(/images/introbg-1240.svg);
-  }
-}
-@media (min-width: 834px) {
   .intro__title {
     font-family: "Montserrat-ExtraBold";
     line-height: 88.9%;
@@ -234,6 +225,11 @@ body {
   }
 }
 @media (min-width: 1240px) {
+  .intro {
+    max-height: 986px;
+    padding-top: 128px;
+    background-image: url(/images/introbg-1240.svg);
+  }
   .intro__title {
     font-family: "Montserrat-ExtraBold";
     font-size: 62px;
@@ -246,6 +242,14 @@ body {
   }
 }
 @media (min-width: 1920px) {
+  .intro {
+    max-height: 984px;
+    padding-top: 182px;
+    background-image: url(/images/introbg1920.svg);
+  }
+  .intro__info {
+    margin-left: 127px;
+  }
   .intro__titlle {
     font-size: 80px;
     letter-spacing: 1.2px;
@@ -260,7 +264,7 @@ body {
     letter-spacing: -0.7px;
   }
 }
-.intro__connect-panel {
+.intro__connect {
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -268,6 +272,26 @@ body {
   margin-top: 100px;
 }
 
+@media (min-width: 834px) {
+  .intro__connect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 344px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1240px) {
+  .intro__connect {
+    margin-top: 223px;
+  }
+}
+@media (min-width: 1920px) {
+  .intro__connect {
+    margin-top: 50px;
+    margin-left: 49px;
+  }
+}
 .intro__pics {
   display: none;
 }
@@ -283,12 +307,15 @@ body {
   .intro-1240-pic {
     display: none;
   }
+  .intro-1920-pic {
+    display: none;
+  }
 }
 @media (min-width: 1240px) {
   .intro__pics {
-    display: flex;
     gap: 68px 66px 68px;
     width: 192px;
+    margin-bottom: 28px;
   }
   .intro__pic {
     width: 192px;
@@ -298,18 +325,17 @@ body {
     display: block;
   }
 }
-@media (min-width: 834px) {
-  .intro__connect-panel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 344px;
-    justify-content: space-between;
+@media (min-width: 1920px) {
+  .intro__pics {
+    gap: 89px;
+    margin-bottom: 22px;
   }
-}
-@media (min-width: 1240px) {
-  .intro__connect-panel {
-    margin-top: 223px;
+  .intro__pic {
+    width: 258px;
+    height: 298px;
+  }
+  .intro-1920-pic {
+    display: block;
   }
 }
 .connect-panel__wrapper {
@@ -319,18 +345,47 @@ body {
   max-height: 135px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
+  justify-content: space-between;
 }
 
+@media (min-width: 834px) {
+  .connect-panel__wrapper {
+    max-width: 51px;
+    max-height: 177px;
+    margin-bottom: 37px;
+  }
+}
+@media (min-width: 1240px) {
+  .connect-panel__wrapper {
+    max-width: 51px;
+    max-height: 180px;
+    margin-bottom: 41px;
+    align-self: end;
+  }
+}
+@media (min-width: 1920px) {
+  .connect-panel__wrapper {
+    max-width: 82px;
+    max-height: 284px;
+  }
+}
 .connect-panel__social {
   display: flex;
   flex-direction: column;
   padding: 12px 9px 10px 10px;
   gap: 10px;
+  align-items: center;
 }
 
 @media (min-width: 834px) {
   .connect-panel__social {
     padding: 16px 12px 14px 13px;
+    gap: 14px;
+  }
+}
+@media (min-width: 1920px) {
+  .connect-panel__social {
+    padding: 26px 19px 22px 22px;
     gap: 14px;
   }
 }
@@ -346,6 +401,11 @@ body {
   width: 18px;
 }
 
+.back-link-icon {
+  width: 39px;
+  height: 39px;
+}
+
 @media (min-width: 834px) {
   .phone-icon {
     width: 20px;
@@ -355,5 +415,24 @@ body {
   }
   .telegramm-icon {
     width: 24px;
+  }
+  .back-link-icon {
+    width: 51px;
+    height: 51px;
+  }
+}
+@media (min-width: 1920px) {
+  .phone-icon {
+    width: 33px;
+  }
+  .whatsapp-icon {
+    width: 41px;
+  }
+  .telegramm-icon {
+    width: 39px;
+  }
+  .back-link-icon {
+    width: 82px;
+    height: 82px;
   }
 }/*# sourceMappingURL=style.css.map */
