@@ -64,6 +64,12 @@ body {
   .main-header__inner {
     min-height: 52px;
   }
+
+  .main-header__menu {
+    display: flex;
+    align-items: center;
+  }
+
   .logo__pic {
     width: 152px;
     height: 23px;
@@ -74,6 +80,7 @@ body {
   .main-header__inner {
     min-height: 74px;
   }
+
   .logo__pic {
     width: 175px;
     height: 27px;
@@ -99,7 +106,7 @@ body {
     display: none;
   }
   .menu__call-icon::after {
-    display: inline-block;
+    display: block;
     content: "8 800 600 83 17";
     color: #fff;
   }
@@ -340,6 +347,7 @@ body {
 }
 
 .connect-panel__wrapper {
+  // position: relative;
   display: flex;
   flex-direction: column;
   max-width: 39px;
@@ -409,6 +417,9 @@ body {
 .back-link-icon {
   width: 39px;
   height: 39px;
+  // position: absolute;
+  // bottom: -7px;
+  // scale: 1.15;
 }
 
 @media (min-width: 834px) {
@@ -444,5 +455,13 @@ body {
   .back-link-icon {
     width: 82px;
     height: 82px;
+  }
+}
+
+// PROJECTS
+
+.projects {
+  &__inner {
+    display: grid;
   }
 }
