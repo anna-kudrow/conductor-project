@@ -461,7 +461,37 @@ body {
 // PROJECTS
 
 .projects {
+  position: relative;
+  max-height: 650px;
+  padding-top: 44px;
+  &__pic {
+    position: absolute;
+  }
   &__inner {
     display: grid;
+    grid-template-columns: 110px 136px;
+    &__project-title {
+      color: #fff;
+      font-size: 15px;
+      font-style: normal;
+      font-family: "Montserrat-ExtraBold";
+      line-height: 100.4%; /* 15.06px */
+      letter-spacing: -0.15px;
+    }
   }
 }
+.wrapper1 {
+  grid-row: span 5;
+}
+// &__inner:first-child {
+//   width: 110px;
+// }
+// &__inner:nth-child(n + 2) {
+//   width: 136px;
+// }
+// &__title {
+//   width: 100px;
+// }
+// &__project-title {
+//   width: 134px;
+// }

@@ -89,6 +89,10 @@ body {
   .main-header__inner {
     min-height: 52px;
   }
+  .main-header__menu {
+    display: flex;
+    align-items: center;
+  }
   .logo__pic {
     width: 152px;
     height: 23px;
@@ -121,7 +125,7 @@ body {
     display: none;
   }
   .menu__call-icon::after {
-    display: inline-block;
+    display: block;
     content: "8 800 600 83 17";
     color: #fff;
   }
@@ -435,4 +439,25 @@ body {
     width: 82px;
     height: 82px;
   }
+}
+.projects {
+  position: relative;
+  max-height: 650px;
+  padding-top: 44px;
+}
+.projects__pic {
+  position: absolute;
+}
+.projects__inner {
+  display: grid;
+  grid-template-columns: 110px 136px;
+  grid-template-rows: 136px;
+}
+.projects__project-title {
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-family: "Montserrat-ExtraBold";
+  line-height: 100.4%; /* 15.06px */
+  letter-spacing: -0.15px;
 }/*# sourceMappingURL=style.css.map */
