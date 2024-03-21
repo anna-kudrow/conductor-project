@@ -441,23 +441,47 @@ body {
   }
 }
 .projects {
-  position: relative;
   max-height: 650px;
   padding-top: 44px;
 }
-.projects__pic {
-  position: absolute;
-}
 .projects__inner {
-  display: grid;
-  grid-template-columns: 110px 136px;
-  grid-template-rows: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.projects__title {
+  color: #fff;
+  font-family: "Montserrat-Normal";
+  font-size: 20px;
+  line-height: 104.4%; /* 20.88px */
+  letter-spacing: -0.7px;
 }
 .projects__project-title {
   color: #fff;
   font-size: 15px;
-  font-style: normal;
   font-family: "Montserrat-ExtraBold";
   line-height: 100.4%; /* 15.06px */
   letter-spacing: -0.15px;
+}
+.projects__project-text {
+  color: #fff;
+  font-family: "Montserrat-Normal";
+  font-size: 9px;
+  line-height: 116.9%;
+}
+.projects__list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.projects__item img {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.splitted-line320 {
+  margin-left: 30px;
+  margin-right: 12px;
 }/*# sourceMappingURL=style.css.map */

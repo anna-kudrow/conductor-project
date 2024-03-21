@@ -461,37 +461,51 @@ body {
 // PROJECTS
 
 .projects {
-  position: relative;
   max-height: 650px;
   padding-top: 44px;
-  &__pic {
-    position: absolute;
-  }
   &__inner {
-    display: grid;
-    grid-template-columns: 110px 136px;
-    &__project-title {
-      color: #fff;
-      font-size: 15px;
-      font-style: normal;
-      font-family: "Montserrat-ExtraBold";
-      line-height: 100.4%; /* 15.06px */
-      letter-spacing: -0.15px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__title {
+    color: #fff;
+    font-family: "Montserrat-Normal";
+    font-size: 20px;
+    line-height: 104.4%; /* 20.88px */
+    letter-spacing: -0.7px;
+  }
+
+  &__project-title {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Montserrat-ExtraBold";
+    line-height: 100.4%; /* 15.06px */
+    letter-spacing: -0.15px;
+  }
+
+  &__project-text {
+    color: #fff;
+    font-family: "Montserrat-Normal";
+    font-size: 9px;
+    line-height: 116.9%;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__item img {
+    margin-bottom: 6px;
+    margin-top: 6px;
   }
 }
-.wrapper1 {
-  grid-row: span 5;
+
+.splitted-line320 {
+  margin-left: 30px;
+  margin-right: 12px;
 }
-// &__inner:first-child {
-//   width: 110px;
-// }
-// &__inner:nth-child(n + 2) {
-//   width: 136px;
-// }
-// &__title {
-//   width: 100px;
-// }
-// &__project-title {
-//   width: 134px;
-// }
