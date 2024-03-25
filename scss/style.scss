@@ -527,3 +527,10 @@ body {
   margin-left: 18px;
   margin-right: 11px;
 }
+
+@media (min-width: 834px) {
+  .projects {
+    max-height: 520px;
+    padding-top: 77px;
+  }
+}
