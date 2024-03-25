@@ -53,7 +53,7 @@ body {
 }
 
 .container {
-  padding: 0 24px;
+  padding: 0 6%;
 }
 
 @media (min-width: 834px) {
@@ -441,13 +441,18 @@ body {
   }
 }
 .projects {
+  position: relative;
   max-height: 650px;
-  padding-top: 44px;
+  padding-top: 40px;
 }
 .projects__inner {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+.projects__border-pic {
+  position: absolute;
+  left: 0;
 }
 .projects__title {
   color: #fff;
@@ -455,6 +460,11 @@ body {
   font-size: 20px;
   line-height: 104.4%; /* 20.88px */
   letter-spacing: -0.7px;
+  padding-top: 14px;
+  max-width: 145px;
+}
+.projects__intro-wrapper {
+  margin-bottom: 27px;
 }
 .projects__project-title {
   color: #fff;
@@ -462,16 +472,19 @@ body {
   font-family: "Montserrat-ExtraBold";
   line-height: 100.4%; /* 15.06px */
   letter-spacing: -0.15px;
+  max-width: 150px;
 }
 .projects__project-text {
   color: #fff;
   font-family: "Montserrat-Normal";
   font-size: 9px;
   line-height: 116.9%;
+  max-width: 124px;
 }
 .projects__list {
   list-style-type: none;
   padding-left: 0;
+  padding-top: 4px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -481,7 +494,17 @@ body {
   margin-top: 6px;
 }
 
+.item__5 {
+  position: relative;
+}
+
+.project__frame {
+  right: 1px;
+  position: absolute;
+  bottom: -36px;
+}
+
 .splitted-line320 {
-  margin-left: 30px;
-  margin-right: 12px;
+  margin-left: 18px;
+  margin-right: 11px;
 }/*# sourceMappingURL=style.css.map */
