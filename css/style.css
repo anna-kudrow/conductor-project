@@ -447,7 +447,7 @@ body {
 }
 .projects__inner {
   display: grid;
-  grid-template-columns: 42% 51%;
+  grid-template-columns: 46% 54%;
   grid-template-rows: repeat(5, minmax(90px, auto));
   grid-row-gap: 18px;
 }
@@ -456,7 +456,6 @@ body {
   left: 0;
 }
 .projects__heading {
-  width: 45%;
   grid-row: 1/6;
 }
 .projects__title {
@@ -480,7 +479,7 @@ body {
   font-family: "Montserrat-ExtraBold";
   line-height: 100.4%; /* 15.06px */
   letter-spacing: -0.15px;
-  max-width: 124px;
+  max-width: 137px;
 }
 .projects__project-text {
   color: #fff;
@@ -499,17 +498,21 @@ body {
   left: 37%;
 }
 
-.item__5 {
-  position: relative;
-}
-
 @media (min-width: 834px) {
   .projects {
     max-height: 520px;
     padding-top: 46px;
   }
+  .projects__inner {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, minmax(90px, auto));
+  }
   .projects__heading {
-    width: 30%;
+    grid-row: 1/1;
+  }
+  .projects__title {
+    font-size: 32px;
+    letter-spacing: -1.12px;
   }
   .projects__pic {
     display: none;
@@ -520,5 +523,8 @@ body {
     flex-wrap: wrap;
     padding-left: 3%;
     gap: 18px;
+  }
+  .projects .dashed-line-320 {
+    left: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
